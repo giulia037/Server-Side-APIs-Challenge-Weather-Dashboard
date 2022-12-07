@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>Weather Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./Assets/06-server-side-apis-homework-demo.png" />
+    <link rel="stylesheet" href="./dot-24-458488.png" />
+
+
+</head>
+
+<body>
+<center>
+        <header class="header container col-12 d-flex justify-content-center">
+            <h1>Weather Dashboard</h1>
+        </header>
+    
+        <section class="container mt-2 col-12 row">
+            <!-- Search Box Section -->
+            <article id="search-box" class="app-title">
+                <div class= "flex-column min-100-vh">
+                    <label for="search" class="bold">Search for a City:</label>
+                    <input type="text" id="search" class="mb-3" placeholder="San Diego">
+                    <button  class="search-btn bold" >Search</button>
+                    <h2  id="cityName">--San Diego--</h2>
+                </div>
+                <div id="search-history" class="pt-3 d-flex flex-column">
+                    <div class="currentWeather">
+                        <p id = "temp"></p>
+                        <p id = "wind"></p>
+                        <p id = "humidity"></p>
+                    </div>
+                </center>
+                        <div id="weatherContainer">
+                            <div id="iconsContainer">
+                                <div class="icons">
+                                    <p class="weather" id="day1"></p>
+                                    <div class="image"><img scr="image.png" class="imgClass" id ="img1" alt=""></div>
+                                    <p class="minValues" id="day1Min">Loading...</p>
+                                    <p class="maxValues" id="day1Max">Loading...</p>
+                                </div>
+                                    <div class="icons">
+                                        <p class="weather" id="day2"></p>
+                                        <div class="image"><img scr="image.png" class="imgClass" id ="img2" alt=""></div>
+                                        <p class="minValues" id="day2Min">Loading...</p>
+                                        <p class="maxValues" id="day2Max">Loading...</p>
+                                    </div>
+                                        <div class="icons">
+                                            <p class="weather" id="day3"></p>
+                                            <div class="image"><img scr="image.png" class="imgClass" id ="img3" alt=""></div>
+                                            <p class="minValues" id="day3Min">Loading...</p>
+                                            <p class="maxValues" id="day3Max">Loading...</p>
+                                        </div>
+                                            <div class="icons">
+                                                <p class="weather" id="day4"></p>
+                                                <div class="image"><img scr="image.png" class="imgClass" id ="img4" alt=""></div>
+                                                <p class="minValues" id="day4Min">Loading...</p>
+                                                <p class="maxValues" id="day4Max">Loading...</p>
+                                            </div>
+                                            <div class="icons">
+                                                <p class="weather" id="day5"></p>
+                                                <div class="image"><img scr="image.png" class="imgClass" id ="img5" alt=""></div>
+                                                <p class="minValues" id="day5Min">Loading...</p>
+                                                <p class="maxValues" id="day5Max">Loading...</p>
+                                            </div>
+                            </div>
+                        </div>
+                        
+</body>
+        
+        
+                    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
+                    <script src="./script.js"></script>
+
+                </body>
+            </html>
